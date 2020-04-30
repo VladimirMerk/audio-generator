@@ -11,7 +11,7 @@
 {
   document.addEventListener('click', play);
 
-  const context = new AudioContext();
+  const context = new (window.AudioContext || window.webkitAudioContext)();
   let currentOscilator = null;
   let gainNode = null;
   function play({ target } = {}) {
