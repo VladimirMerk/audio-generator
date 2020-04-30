@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset name="sine">
+      <legend>Sine</legend>
+      <button name="play">Play</button>
+      <button name="stop">Stop</button>
+    </fieldset>
+    <fieldset name="gain">
+      <legend>Sine + Gain</legend>
+      <button name="play">Play</button>
+      <button name="stop">Stop</button>
+    </fieldset>
+    <fieldset name="blump">
+      <legend>Start and stop</legend>
+      <button name="play" data-type="sine">Blump (sine)</button>
+      <button name="play" data-type="square">Blump (square)</button>
+      <button name="play" data-type="triangle">Blump (triangle)</button>
+      <button name="play" data-type="sawtooth">Blump (sawtooth)</button>
+    </fieldset>
+    <fieldset name="notes">
+      <label><input type="radio" checked name="type" value="sine" /> Sine</label><br />
+      <label><input type="radio" name="type" value="square" /> Square</label><br />
+      <label><input type="radio" name="type" value="triangle" /> Triangle</label><br />
+      <label><input type="radio" name="type" value="sawtooth" /> Sawtooth</label><br />
+      <table class="data_table">
+        <tr>
+          <td></td>
+          <th>C</th>
+          <th>C#</th>
+          <th>D</th>
+          <th>Eb</th>
+          <th>E</th>
+          <th>F</th>
+          <th>F#</th>
+          <th>G</th>
+          <th>G#</th>
+          <th>A</th>
+          <th>Bb</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>0</th>
+          <td>
+            <button name="play" data-frequency="16.35">
+              ● 16.35
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="18.35">
+              ● 17.32
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="18.35">
+              ● 18.35
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="19.45">
+              ● 19.45
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="20.60">
+              ● 20.60
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="21.83">
+              ● 21.83
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="23.12">
+              ● 23.12
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="24.50">
+              ● 24.50
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="25.96">
+              ● 25.96
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="27.50">
+              ● 27.50
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="29.14">
+              ● 29.14
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="30.87">
+              ● 30.87
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>
+            <button name="play" data-frequency="32.70">
+              ● 32.70
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="34.65">
+              ● 34.65
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="36.71">
+              ● 36.71
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="38.89">
+              ● 38.89
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="41.20">
+              ● 41.20
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="43.65">
+              ● 43.65
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="46.25">
+              ● 46.25
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="49.00">
+              ● 49.00
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="51.91">
+              ● 51.91
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="55.00">
+              ● 55.00
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="58.27">
+              ● 58.27
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="61.74">
+              ● 61.74
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>
+            <button name="play" data-frequency="65.41">
+              ● 65.41
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="69.30">
+              ● 69.30
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="73.42">
+              ● 73.42
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="77.78">
+              ● 77.78
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="82.41">
+              ● 82.41
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="87.31">
+              ● 87.31
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="92.50">
+              ● 92.50
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="98.00">
+              ● 98.00
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="103.8">
+              ● 103.8
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="110.0">
+              ● 110.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="116.5">
+              ● 116.5
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="123.5">
+              ● 123.5
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>
+            <button name="play" data-frequency="130.8">
+              ● 130.8
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="138.6">
+              ● 138.6
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="146.8">
+              ● 146.8
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="155.6">
+              ● 155.6
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="164.8">
+              ● 164.8
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="174.6">
+              ● 174.6
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="185.0">
+              ● 185.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="196.0">
+              ● 196.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="207.7">
+              ● 207.7
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="220.0">
+              ● 220.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="233.1">
+              ● 233.1
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="246.9">
+              ● 246.9
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>
+            <button name="play" data-frequency="261.6">
+              ● 261.6
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="277.2">
+              ● 277.2
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="293.7">
+              ● 293.7
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="311.1">
+              ● 311.1
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="329.6">
+              ● 329.6
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="349.2">
+              ● 349.2
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="370.0">
+              ● 370.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="392.0">
+              ● 392.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="415.3">
+              ● 415.3
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="440.0">
+              ● 440.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="466.2">
+              ● 466.2
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="493.9">
+              ● 493.9
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>
+            <button name="play" data-frequency="523.3">
+              ● 523.3
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="554.4">
+              ● 554.4
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="587.3">
+              ● 587.3
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="622.3">
+              ● 622.3
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="659.3">
+              ● 659.3
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="698.5">
+              ● 698.5
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="740.0">
+              ● 740.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="784.0">
+              ● 784.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="830.6">
+              ● 830.6
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="880.0">
+              ● 880.0
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="932.3">
+              ● 932.3
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="987.8">
+              ● 987.8
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>
+            <button name="play" data-frequency="1047">
+              ● 1047
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1109">
+              ● 1109
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1175">
+              ● 1175
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1245">
+              ● 1245
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1319">
+              ● 1319
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1397">
+              ● 1397
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1480">
+              ● 1480
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1568">
+              ● 1568
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1661">
+              ● 1661
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1760">
+              ● 1760
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1865">
+              ● 1865
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="1976">
+              ● 1976
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>
+            <button name="play" data-frequency="2093">
+              ● 2093
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="2217">
+              ● 2217
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="2349">
+              ● 2349
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="2489">
+              ● 2489
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="2637">
+              ● 2637
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="2794">
+              ● 2794
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="2960">
+              ● 2960
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="3136">
+              ● 3136
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="3322">
+              ● 3322
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="3520">
+              ● 3520
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="3729">
+              ● 3729
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="3951">
+              ● 3951
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>
+            <button name="play" data-frequency="4186">
+              ● 4186
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="4435">
+              ● 4435
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="4699">
+              ● 4699
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="4978">
+              ● 4978
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="5274">
+              ● 5274
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="5588">
+              ● 5588
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="5920">
+              ● 5920
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="6272">
+              ● 6272
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="6645">
+              ● 6645
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="7040">
+              ● 7040
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="7459">
+              ● 7459
+            </button>
+          </td>
+          <td>
+            <button name="play" data-frequency="7902">
+              ● 7902
+            </button>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <script src="main.js"></script>
+  </body>
+</html>
